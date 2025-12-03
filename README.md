@@ -97,21 +97,21 @@ Buka browser di http://localhost:3000.
 
 Karena berjalan di Localhost, kamu perlu setting MetaMask agar memiliki saldo ETH mainan:
 
-    1. Ambil Private Key: Lihat terminal npx hardhat node, copy Private Key dari Account #0.
-    2. Import Akun: Di MetaMask, klik Profil -> Import Account -> Paste Private Key.
-    3. Tambah Jaringan Localhost:
-      - Network Name: Localhost 8545
-      - RPC URL: http://127.0.0.1:8545
-      - Chain ID: 31337
-      - Symbol: ETH
+  1. Ambil Private Key: Lihat terminal npx hardhat node, copy Private Key dari Account #0.
+  2. Import Akun: Di MetaMask, klik Profil -> Import Account -> Paste Private Key.
+  3. Tambah Jaringan Localhost:
+    - Network Name: Localhost 8545
+    - RPC URL: http://127.0.0.1:8545
+    - Chain ID: 31337
+    - Symbol: ETH
 
 Sekarang kamu punya 10.000 ETH untuk testing! 🎉
 ## 🔮 Roadmap / To-Do
-    [x] Deploy ke Localhost
-    [x] Basic UI/UX (Dark Mode)
-    [ ] Deploy ke Public Testnet (Sepolia/Base Sepolia)
-    [ ] Tambah fitur Bunga (Yield) sederhana
-    [ ] Tambah support Token ERC-20 (USDT/USDC)
+  [x] Deploy ke Localhost
+  [x] Basic UI/UX (Dark Mode)
+  [ ] Deploy ke Public Testnet (Sepolia/Base Sepolia)
+  [ ] Tambah fitur Bunga (Yield) sederhana
+  [ ] Tambah support Token ERC-20 (USDT/USDC)
 
 ## 🤝 Author
 
