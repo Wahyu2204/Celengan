@@ -56,7 +56,7 @@ Ikuti langkah ini untuk menjalankan aplikasi di komputer lokal.
 
 ###  1. Clone Repository
 ```bash
-git clone [https://github.com/username-kamu/nama-repo.git](https://github.com/username-kamu/nama-repo.git)
+git clone https://github.com/Wahyu2204/Celengan.git
 cd coba-defi
 ```
 ### 2. Setup Backend (Blockchain)
