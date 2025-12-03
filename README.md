@@ -48,13 +48,14 @@ coba-defi/
     ├── components/     # UI Components (Navbar, Buttons)
     ├── config/         # Settingan Wagmi & RainbowKit
     └── constants/      # ABI & Contract Address
+```
 
 ## 🏃‍♂️ Cara Menjalankan Project (Localhost)
 
 Ikuti langkah ini untuk menjalankan aplikasi di komputer lokal.
 
 ##  1. Clone Repository
-Bash
+```bash
 
 git clone [https://github.com/username-kamu/nama-repo.git](https://github.com/username-kamu/nama-repo.git)
 cd coba-defi
