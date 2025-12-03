@@ -54,87 +54,68 @@ coba-defi/
 
 Ikuti langkah ini untuk menjalankan aplikasi di komputer lokal.
 
-##  1. Clone Repository
+###  1. Clone Repository
 ```bash
-
 git clone [https://github.com/username-kamu/nama-repo.git](https://github.com/username-kamu/nama-repo.git)
 cd coba-defi
-
-2. Setup Backend (Blockchain)
+```
+### 2. Setup Backend (Blockchain)
 
 Buka terminal baru, masuk ke folder blockchain:
-Bash
-
+```bash
 cd blockchain
 npm install
-
+```
 Nyalakan jaringan blockchain lokal (Jangan tutup terminal ini):
-Bash
-
+```bash
 npx hardhat node
-
+```
 Buka terminal baru (split), lalu deploy contract:
-Bash
-
+```bash
 npx hardhat ignition deploy ./ignition/modules/Celengan.ts --network localhost
-
+```
     ⚠️ PENTING: Salin alamat contract yang muncul (contoh: 0xe7f...) untuk langkah selanjutnya.
 
-3. Setup Frontend
+### 3. Setup Frontend
 
 Buka terminal baru, masuk ke folder web:
-Bash
-
+```bash
 cd web
 npm install
-
-Update alamat contract:
-
-    Buka file web/constants/index.ts.
-
-    Ganti CELENGAN_ADDRESS dengan alamat yang tadi disalin.
+```
+**Update alamat contract**
+- Buka file web/constants/index.ts.
+- Ganti CELENGAN_ADDRESS dengan alamat yang tadi disalin.
 
 Jalankan website:
-Bash
-
+```bash
 npm run dev
-
+```
 Buka browser di http://localhost:3000.
-🦊 Setup MetaMask (Penting!)
+
+## 🦊 Setup MetaMask (Penting!)
 
 Karena berjalan di Localhost, kamu perlu setting MetaMask agar memiliki saldo ETH mainan:
 
-    Ambil Private Key: Lihat terminal npx hardhat node, copy Private Key dari Account #0.
-
-    Import Akun: Di MetaMask, klik Profil -> Import Account -> Paste Private Key.
-
-    Tambah Jaringan Localhost:
-
-        Network Name: Localhost 8545
-
-        RPC URL: http://127.0.0.1:8545
-
-        Chain ID: 31337
-
-        Symbol: ETH
+    1. Ambil Private Key: Lihat terminal npx hardhat node, copy Private Key dari Account #0.
+    2. Import Akun: Di MetaMask, klik Profil -> Import Account -> Paste Private Key.
+    3. Tambah Jaringan Localhost:
+      - Network Name: Localhost 8545
+      - RPC URL: http://127.0.0.1:8545
+      - Chain ID: 31337
+      - Symbol: ETH
 
 Sekarang kamu punya 10.000 ETH untuk testing! 🎉
-🔮 Roadmap / To-Do
-
+## 🔮 Roadmap / To-Do
     [x] Deploy ke Localhost
-
     [x] Basic UI/UX (Dark Mode)
-
     [ ] Deploy ke Public Testnet (Sepolia/Base Sepolia)
-
     [ ] Tambah fitur Bunga (Yield) sederhana
-
     [ ] Tambah support Token ERC-20 (USDT/USDC)
 
-🤝 Author
+## 🤝 Author
 
-Dibuat oleh [Nama Kamu]. Mahasiswa Teknik Informatika yang sedang mendalami Web3 Development.
-
+Dibuat oleh Wahyu Andrianto Wibowo. Mahasiswa Teknik Informatika yang sedang mendalami Web3 Development.
 
 ---
 
